@@ -1,0 +1,129 @@
+{
+name:Pikachu,
+age:42,
+marks_in_2_subjects:[10,20],
+more_info:{ ...
+}
+}
+-> Document  / BSON 
+
+Semistructured Data: SQL[Strong schema] + 
+	JSON and ARRAY data types 
+
+
+MongDB API-> NoSQL 
+Cassandra API -> COLUMNAR dbs -> 
+	Each column -> sep file, copied at least 3 times 
+	Distributed Computing
+	Because-> A COLUMN has a fixed DataTYPE-> high compression
+	can be acheived!!! 
+Graph API -> vertices/edges, graphs, traversal
+	search, Graphs 
+Table API
+SQL API (CORE) 
+
+Scripting Language specifics remain the same
+ANY INFRA or NETWORK or ADMIN related activities are transferred to
+COSMOS!!!
+
+Pay-> for performance, for availability, for consistency 
+
+(RK)
+Id Fname Lname 
+1  Mike   ABC
+2  Jane   BCD
+
+Run-Length Encoding: 
+	-> {1:Mike},{2:Jane}
+	-> {1:ABC}, {2:BCD} 
+
+COMPRESSION happens when repeating data occurs!!!
+Data that LOOKS similar is STORED together!!!!
+
+Run Length Encoding
+(Mike,1),(Jane,1),(Mike,1),(Jane,1),(Mike,2) 
+
+
+Dictionary Encoding 
+Id Fname Lname   -> File 1: Fname:  Mike:{1,3,5,6}, Jane:{2,4}
+1  Mike   ABC	 -> File 2: Lname:  ABC:{1,2},XYZ:{3,4,5}, CDE:{6} 
+2  Jane   ABC
+3  Mike   XYZ
+4  Jane   XYZ
+5  Mike   XYZ
+6  Mike   CDE
+
+On Premise-> SELECT * 
+Cloud-> Cosmos does all this for you auto-magically
+
+Azure Table: Blob Storages, Queues, Files(IaaS-disk), Table
+Tables are KEY-VAULE pair tables (tuple units)
+	-> IoT Data (temporary hosting)
+
+world v/s MongoDB-> arrays v/s TREES 
+
+Binary-> 0 and 1-> 2^depth - 1
+MongoDB-> 0-9, a-z-> 36->    36^depth -1 
+	-> BULK NO-SQL unstructured searching
+	-> high storage optimization!
+
+
+class NODE{ template<type<T>>* data; NODE* ch1... ch36} 
+
+class ABC{ char a; char b; double c;}
+class BCD{ double a; char b; char c;}
+class CDE{ char a; double b; char c;}
+
+char-> 1 byte, double-> 8 bytes
+stack, heap -> computing 
+
+size of stack= size of pointer= size of int = ACCUMULATOR (AX, eAX, ah,al)
+
+Even on the smallest structures-> RAM was wasted!!!
+BREAK down into SMALL units-> 
+	ALLOCATE small units of CPU, Storage, Networks 
+
+
+Big Data-> SCALE UP!!!
+COSMOS Db-> Storing in DOCUMENT DB achieves very HIGH storage optimization
+=> BSON 
+
+Cloud:
+ORGANIZATION=> Azure Active Directory 
+	-> SUBSCRIPTION-> billing entity (more than 1 possible) 
+		-> Resource Groups
+			- LIFECYCLE LOGICAL GROUPS
+		   - same create/delete cycles 
+		   - VM: machines, disk, IP, VN, NIC, NSG
+		   - Data Lake-> separate resource group	
+		     - SQLDW, Spark , Databricks-> sep. res groups 
+
+Name:
+ResourceGroup:<create>
+API: choose any
+Location: EastUS2 
+
+DataLake=> CSV-> JSON/Parquet
+
+SQL DW(AdventureWorks)=> JSON/Parquet=>DataLake
+
+
+
+
+
+
+
+https://docs.microsoft.com/en-us/azure/best-practices-availability-paired-regions
+
+CosmosDB-> PowerBI 
+CosmosDB + Databricks Notebooks 
+
+DA-> data analytics 
+DS-> data science 
+D-> general purpose/web-app servers
+NV-> GPU 
+E-> enterprise 
+F-> high computing
+
+
+
